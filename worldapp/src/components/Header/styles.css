@@ -1,0 +1,10 @@
+.container p {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container p b {
+  margin-left: 8px;
+}
