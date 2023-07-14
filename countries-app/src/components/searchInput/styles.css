@@ -1,0 +1,109 @@
+.inputArea {
+  display: flex;
+  max-width: 1440px;
+  margin: auto;
+  justify-content: space-between;
+  padding: 40px 0px;
+  color: var(--text-color);
+}
+
+.inputArea .searchInput input {
+  height: 50px;
+  width: 450px;
+  border-radius: 6px;
+  padding: 0px 10px;
+  border: none;
+  box-shadow: 2px 2px 1em rgba(0, 0, 0, 0.171);
+  outline: 0;
+  font-size: 14px;
+  background-color: var(--elements-color);
+  color: var(--text-color);
+}
+
+.inputArea .searchInput .searchIcon {
+  margin-left: -30px;
+  color: var(--text-color);
+  margin-bottom: -5px;
+}
+
+input::placeholder {
+  color: var(--text-color);
+}
+
+@media (max-width: 1024px) {
+  .inputArea {
+    width: auto;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .inputArea {
+    flex-direction: column;
+  }
+
+  .inputArea .searchInput input {
+    width: 94%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button */
+.dropdownButton {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: var(--elements-color);
+  cursor: pointer;
+  border: none;
+  box-shadow: 2px 2px 1em rgba(0, 0, 0, 0.2);
+  outline: 0;
+  font-size: 12px;
+  border-radius: 6px;
+  color: var(--text-color);
+}
+
+/* Dropdown list */
+.dropdownList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  display: none;
+  padding: 8px 0;
+  margin: 0;
+  background-color: var(--elements-color);
+  color: var(--text-color);
+  border: none;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  list-style: none;
+  width: 200px;
+  font-size: 12.8px;
+}
+
+/* Show the dropdown list when open */
+.dropdown.open .dropdownList {
+  display: block;
+  color: var(--text-color);
+}
+
+/* Dropdown options */
+.dropdownOption {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+/* Hover effect on options */
+.dropdownOption:hover {
+  background-color: var(--background-color);
+}

@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;1,600;1,800&display=swap");
+
+:root {
+  --text-color: hsl(200, 15%, 8%);
+  --input-color: hsl(0, 0%, 52%);
+  --background-color: hsl(0, 0%, 98%);
+  --elements-color: hsl(0, 0%, 100%);
+}
+
+.app.dark {
+  --text-color: hsl(0, 0%, 100%);
+  --input-color: hsl(0, 0%, 52%);
+  --background-color: hsl(207, 26%, 17%);
+  --elements-color: hsl(209, 23%, 22%);
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Common styles for both themes */
+.container {
+  /* Add common styles */
+  outline: none;
+  padding: 0px 240px;
+  height: 90px;
+  display: flex;
+  max-width: 1840px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 2px 1em rgba(0, 0, 0, 0.2);
+}
+
+.container p {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container p b {
+  margin-left: 8px;
+}
+
+/* Light theme */
+
+.app.light {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+/* Dark theme */
+
+.app.dark {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.container {
+  color: var(--text-color);
+  background-color: var(--elements-color);
+}
+
+/* Rest of your CSS styles */
+@media (max-width: 1024px) {
+  .container {
+    width: auto;
+    padding: 0px 40px;
+  }
+
+  .inputArea {
+    width: auto;
+    padding: 20px;
+  }
+  .mainCountry {
+    padding: 20px;
+  }
+
+  .countryContainer {
+    width: auto;
+  }
+  .countries {
+    grid-template-columns: repeat(4, 1fr);
+    width: auto;
+    padding: 0px 20px;
+  }
+}
+
+@media (max-width: 1124px) {
+  .container {
+    width: auto;
+    padding: 0px 40px;
+  }
+  .inputArea {
+    width: auto;
+    padding: 20px;
+  }
+  .mainCountry {
+    padding: 20px;
+  }
+
+  .countryContainer {
+    width: auto;
+  }
+  .countries {
+    grid-template-columns: repeat(4, 1fr);
+    width: auto;
+    padding: 0px 20px;
+  }
+  .countryData {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 1224px) {
+  .container {
+    width: auto;
+    padding: 0px 40px;
+  }
+  .inputArea {
+    width: auto;
+    padding: 20px;
+  }
+  .mainCountry {
+    padding: 20px;
+  }
+
+  .countryContainer {
+    width: auto;
+  }
+  .countries {
+    grid-template-columns: repeat(4, 1fr);
+    width: auto;
+    padding: 0px 20px;
+  }
+}
+
+@media (max-width: 1324px) {
+  .container {
+    width: auto;
+    padding: 0px 40px;
+  }
+  .inputArea {
+    width: auto;
+    padding: 20px;
+  }
+  .mainCountry {
+    padding: 20px;
+  }
+
+  .countryContainer {
+    width: auto;
+  }
+  .countries {
+    grid-template-columns: repeat(4, 1fr);
+    width: auto;
+    padding: 0px 20px;
+  }
+}
+
+@media (max-width: 1424px) {
+  .container {
+    width: auto;
+    padding: 0px 40px;
+  }
+  .inputArea {
+    width: auto;
+    padding: 20px;
+  }
+  .mainCountry {
+    padding: 20px;
+  }
+
+  .countryContainer {
+    width: auto;
+  }
+
+  .countries {
+    grid-template-columns: repeat(4, 1fr);
+    width: auto;
+    padding: 0px 20px;
+  }
+}
+
+@media (max-width: 1524px) {
+  .container {
+    width: auto;
+    padding: 0px 40px;
+  }
+  .inputArea {
+    width: auto;
+    padding: 20px;
+  }
+  .mainCountry {
+    padding: 20px;
+  }
+
+  .countryContainer {
+    width: auto;
+  }
+
+  .countries {
+    grid-template-columns: repeat(4, 1fr);
+    width: auto;
+    padding: 0px 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    height: 80px;
+    margin: 0;
+  }
+  .container {
+    align-items: center;
+    padding: 4px 20px;
+    height: 100%;
+    margin: 0;
+  }
+  .container p {
+    font-size: 14px;
+  }
+
+  .container h1 {
+    font-size: 17px;
+  }
+}
+
+@media (max-device-width: 480px) {
+  .countries {
+    grid-template-columns: 1fr;
+    width: auto;
+    padding: 0px 20px;
+  }
+}
+
+@media (max-device-width: 370px) {
+  body {
+    background-color: var(--background-color);
+  }
+  .container {
+    width: auto;
+    padding: 0px 40px;
+  }
+}
